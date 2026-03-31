@@ -8,3 +8,6 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/≈
+
+#MacOS_Desktop_Services_Store
+.DS_Store
