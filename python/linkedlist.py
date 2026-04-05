@@ -1,3 +1,5 @@
+from mimetypes import init
+
 
 class Node:
     def __init__(self, value):
@@ -12,6 +14,16 @@ class Singlelinkedlist:
     def is_empty(self):
         return self.head is None
 
+    #计算长度
+    def length(self):
+        cur = self.head
+        count = 0
+        while cur is not None:
+            count += 1
+            cur = cur.next
+
+        return count
+
 if __name__ == '__main__':
     linkedlist = Singlelinkedlist()
     linkedlist.head = Node(5)
@@ -20,3 +32,5 @@ if __name__ == '__main__':
     print(linkedlist.head.next.value)
 
     print(linkedlist.is_empty())
+
+    print(linkedlist.length())
