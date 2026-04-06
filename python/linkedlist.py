@@ -24,6 +24,13 @@ class Singlelinkedlist:
 
         return count
 
+    #遍历链表
+    def travel(self):
+        cur = self.head
+        while cur is not None:
+            print(cur.value)
+            cur = cur.next
+
 if __name__ == '__main__':
     linkedlist = Singlelinkedlist()
     linkedlist.head = Node(5)
@@ -34,3 +41,5 @@ if __name__ == '__main__':
     print(linkedlist.is_empty())
 
     print(linkedlist.length())
+
+    print(linkedlist.travel())
